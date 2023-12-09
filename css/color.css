@@ -51,6 +51,7 @@ body {
   animation: cyber 5.2s ease-in infinite;
   -moz-animation: cyber 5.2s ease-in infinite;
   -webkit-animation: cyber 5.2s ease-in infinite;
+  
 }
 @keyframes cyber {
   0%,
@@ -160,6 +161,74 @@ audio::-webkit-media-controls-volume-slider {
     display: block;
 }
 
+.img-logo{
+  width: 300px;
+  height: auto;
+  margin: auto;
+  display: block;
+  animation-duration: 3s;
+  animation-name: slidein1;
+}
+
 .img2{
-  width: 160px;
+  width: 200px;
+  animation-duration: 10s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 50%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 900px) {
+
+  .cyber {
+    font-size: 12vw;
+    line-height: 7vw;
+  }
+
+  .zone {
+    font-size: 15vw;
+    line-height: 7vw;
+  }
+
+  .img-logo{width: 200px;}
+  .img1{width: 50px;}
+  .img2{width: 70px;}
+  
 }
