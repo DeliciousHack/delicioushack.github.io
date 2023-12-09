@@ -29,7 +29,7 @@ body {
   margin-top: 80px;
   font-family: neon;
   color: #FB42D4;
-  font-size: 7vw;
+  font-size: 8vw;
   line-height: 7vw;
   text-shadow: 0 0 3vw #F40AD5;
   margin-left: -120px;
@@ -42,7 +42,7 @@ body {
   font-size: 9vw;
   line-height: 9vw;
   text-shadow: 0 0 3vw #000000;
-  margin-left: 250px;
+  margin-left: 320px;
   cursor:help;
 }
 
@@ -85,6 +85,7 @@ body {
 
 /*Button Stuff*/
 .button{
+  margin: 0 auto;
   margin-top: 80px;
   width: 15rem;
   height: 6rem;
@@ -108,6 +109,7 @@ body {
   display: fixed;
   vertical-align: bottom;
   justify-content: center;
+  
 }
 audio::-webkit-media-controls-panel {
   background-color: #101010;
@@ -164,17 +166,22 @@ audio::-webkit-media-controls-volume-slider {
 .img-logo{
   width: 300px;
   height: auto;
-  margin: auto;
+  margin: 0 auto;
   display: block;
-  animation-duration: 3s;
-  animation-name: slidein1;
 }
 
 .img2{
-  width: 200px;
-  animation-duration: 10s;
-  animation-name: slidein2;
+  width: 100px;
 }
+
+.img-loading{
+  width: 160px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 @keyframes slidein {
   from {
@@ -218,17 +225,21 @@ audio::-webkit-media-controls-volume-slider {
 @media only screen and (max-width : 900px) {
 
   .cyber {
-    font-size: 12vw;
-    line-height: 7vw;
+    font-size: 16vw;
+    line-height: 20vw;
+    margin-left: -30px;
   }
 
   .zone {
-    font-size: 15vw;
-    line-height: 7vw;
+    font-size: 20vw;
+    line-height: 10vw;
+    margin-left: 150px;
   }
 
-  .img-logo{width: 200px;}
+  .img-logo{width: 250px;}
   .img1{width: 50px;}
   .img2{width: 70px;}
-  
+  .img-loading{width: 100px;}
+
+
 }
