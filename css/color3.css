@@ -1,0 +1,392 @@
+/*** Global styles */
+:root {
+  --font-menu: Cinzel, serif;
+  --text-color: #bfbfbf;
+  --active-color: #cbcbcb;
+  --scroll-bg-color: #fcf8ff;
+  --scroll-color: #8929b2;
+  --menu-background: linear-gradient( #00000000, #000000, #00000000);
+  --secondary-color: #000000;
+}
+
+
+
+
+ul.phone-spec-table {width: 100%;margin-top: 30px;margin-bottom: 30px;}ul.phone-spec-table li {height: 50px;width: 95%;  margin-bottom: 10px; position: relative; color: #fff; line-height: 3; font-weight: 700; list-style: none;background: #7911ba;}ul.phone-spec-table li span:nth-child(1){float: right; height: 50px; display: inline-block; background: #000000; width: 50px; margin: 0 0 0 0; position: relative; z-index: 10;text-align: center;}ul.phone-spec-table li span:nth-child(1) i{font-size: 20px;}ul.phone-spec-table li span:nth-child(2){ float: right;display: block;height: 100%; text-align: right; padding: 2px 8px;max-width: 100%;position: relative; z-index: 10;}ul.phone-spec-table li::after{position: absolute; top: 0; right: 0;background: #c423e0; height: 100%;width: 0; content: '';transition: all 2s ease;}ul.phone-spec-table li i{font-family:'fontawesome';}ul.phone-spec-table li:hover::after{width:100%}@media screen and (max-width:550px){ul.phone-spec-table li span:nth-child(1) {height: 35px; width: 35px;}ul.phone-spec-table li {height: 35px;}ul.phone-spec-table li span:nth-child(2) {font-size: 10px;}}
+
+
+.tabla{
+width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  width: 100%;
+  background-image: url(https://cdn.wallpapersafari.com/84/21/FRHlcL.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+
+/*** Menu */
+.menu {
+  user-select: none;
+  inset: 0 0 auto 0;
+  z-index: 2;
+  font: 1.1em var(--font-menu);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background: var(--menu-background);
+  height: 50px;
+}
+
+.menu__list::-webkit-scrollbar {
+  height: .4em;
+}
+
+.menu__list::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
+
+.menu__list::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border: 1px solid #6e148d;
+  border-radius: 2em;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: var(--scroll-color) var(--scroll-bg-color);
+  scrollbar-width: thin;
+  overflow-x: auto;
+  margin-top: 6px;
+  font-size: 24px;
+}
+
+.menu__item {
+  transition: text-shadow 0.4s ease-in, box-shadow 0.5s ease-out;
+  margin: 0 1em;
+}
+
+.menu__item:hover {
+  text-shadow: 1px 1px 4px var(--active-color);
+  box-shadow: inset 0 0 3px 2px rgba(96, 8, 150, 0.25);
+}
+
+.menu__link {
+  will-change: opacity;
+  display: flex;
+  padding: .2em;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__list:hover .menu__link:not(:hover) {
+  transition: opacity .3s linear;
+  opacity: .35;
+}
+
+
+section{
+  width: 50%;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.caja1{
+  margin-top: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  text-align: justify;
+  background-image: linear-gradient(to left, #51810e, #36104b, #0c0610, #36104b, #51810e); 
+  border-radius: 10px;
+  padding: 30px;
+  filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 5px);
+  
+}
+
+.caja1:hover {
+  filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 25px);
+  border-style:solid; border-color: #000000;
+  border-width: 0.4rem;
+}
+
+.text-caja1{
+  margin-top: 4rem;
+  padding-right: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 30px;
+  display: flex;
+  font-size: 20px;
+  color: aliceblue;
+
+}
+
+.img-caja1{
+  padding-right: 30px;
+  width: 30%;
+  filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+}
+
+.img-caja1:hover{
+  filter: drop-shadow(rgb(233, 186, 232) 0.5rem 0.5rem 5px);
+}
+
+.caja2{
+  margin-top: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  text-align: justify;
+  background-image: linear-gradient(to left, #000000, #290c39, #550e81, #290c39, #030204); 
+  /* background-color: #77059de3; */
+  border-radius: 10px;
+  padding: 30px;
+  filter: drop-shadow(rgb(0, 0, 0) -1rem -1rem 5px);
+  
+}
+
+.caja2:hover {
+  filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 25px);
+  border-style:solid; border-color: #000000;
+  border-width: 0.4rem;
+}
+
+.img-caja2{
+  padding-right: 30px;
+  width: 30%;
+  filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+}
+
+.img-caja2:hover{
+  filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+}
+
+.caja3{
+  margin-top: 160px;
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  
+  text-align: justify;
+  background-image: linear-gradient(to left, #aa0f0f, #36104b, #0c0610, #36104b, #aa0f0f); 
+  border-radius: 10px;
+  padding: 30px;
+  filter: drop-shadow(rgb(0, 0, 0) -1rem -1rem 5px);
+  
+}
+
+.caja3:hover {
+  filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 25px);
+  border-style:solid; border-color: #000000;
+  border-width: 0.4rem;
+}
+
+.ti-ar{
+  padding: 15px;
+  display: flex;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.img-articulos{
+  padding-left: 30px;
+  width: 50%;
+  filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1600px) {
+
+  html {
+    color-scheme: dark;
+    background-image: url(https://cdn.wallpapersafari.com/84/21/FRHlcL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+  }
+
+
+  section{
+    width: 70%;
+    margin: 0 auto;
+    
+  
+  }
+  
+  .caja1{
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    text-align: justify;
+    background-color: #024362e3;
+    border-radius: 10px;
+    padding: 30px;
+    filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 5px);
+    
+  }
+  
+  .img-caja1{
+    padding-right: 30px;
+    width: 30%;
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+  .img-caja1:hover{
+    filter: drop-shadow(rgb(233, 186, 232) 0.5rem 0.5rem 5px);
+  }
+
+  .text-caja1{
+    margin-top: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    font-size: 20px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+
+  .caja2{
+    margin-top: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    text-align: justify;
+    background-color: #77059de3;
+    border-radius: 10px;
+    padding: 30px;
+    filter: drop-shadow(rgb(0, 0, 0) -1rem -1rem 5px);
+    
+  }
+
+  .img-caja2{
+    padding-right: 30px;
+    width: 30%;
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+  .img-caja2:hover{
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 700px) {
+
+  .menu {
+    user-select: none;
+    inset: 0 0 auto 0;
+    z-index: 2;
+    font: 0.8em var(--font-menu);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: var(--menu-background);
+  }
+
+  html {
+    color-scheme: dark;
+    background-image: url(https://cdn.wallpapersafari.com/84/21/FRHlcL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  section{
+    width: 80%;
+    margin: 0 auto;
+    
+  
+  }
+  
+  .caja2{
+    margin-top: 15rem;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    
+    text-align: justify;
+    background-color: #024362e3;
+    border-radius: 10px;
+    padding: 1px;
+    filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 5px);
+    
+  }
+  
+  .img-caja1{
+    padding: 0px;
+    margin-top: 10px;
+    width: 95%;
+    height: 130px;
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+  .img-caja1:hover{
+    filter: drop-shadow(rgb(233, 186, 232) 0.5rem 0.5rem 5px);
+  }
+  
+  .img-caja2{
+    margin-top: 3rem;
+    display: inline;
+    width: 100%;
+    height: 190px;
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+  .img-caja2:hover{
+    filter: drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 5px);
+  }
+  
+  .text-caja1{
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    font-size: 16px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
