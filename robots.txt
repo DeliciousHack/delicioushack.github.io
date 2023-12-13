@@ -5,7 +5,7 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://delicioushack.com/sitemap.xml
+Sitemap: https://xmasby.delicioushack.com/sitemap.xml
 
 #      .--..--..--..--..--..--.
 #    .' \  (`._   (_)     _   \
