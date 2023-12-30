@@ -457,3 +457,65 @@ display: flex;
     font-size:50px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    #header {
+        width: 100%;
+        height: 100vh;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        background-image: url(../images/bg1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-family: 'Rajdhani', sans-serif;
+        filter: blur(2px);
+        }
+    
+    .drop-shadow span {
+        position: absolute;
+        z-index: 5;
+        color: black;
+        font-size: 50px;
+        letter-spacing: 0.20em;
+        text-align: center;
+        filter: drop-shadow(rgb(255, 255, 255) 2rem 2rem 5px);
+        font-weight: 900;
+        }
+
+        .drop-shadow:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 10%;
+            height: calc(100% - 40%);
+            width: 100%;
+            border-top: 0px solid #e1e1e133;
+            border-left: 0px solid #e1e1e11a;
+            border-right: 0px solid #e1e1e14d;
+            z-index: 2;
+            filter: blur(0px);
+            }
+
+            .foos{
+                color: purple;
+                font-size: 30px;
+                margin-left: 0.5rem;
+                font-weight: 900;
+                visibility: hidden;
+            }
+}
