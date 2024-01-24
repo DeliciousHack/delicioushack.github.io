@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  border-style: double;
+  border-radius: 0%;
+  border-color: rgb(167, 37, 228);
+  border: none;
+  box-shadow: 0 6px 10px rgba(170, 36, 248, 0.15);
+  margin: 4rem;
+  margin-top: 0.5rem;
+}
+
+.scene {
+  perspective: 36rem;
+  transform-style: preserve-3d;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-image: linear-gradient(
+    rgba(118, 8, 122, 0.418),
+    rgba(51, 7, 51, 0.329) 35%,
+    transparent 50%,
+    transparent 90%,
+    black
+  );
+  pointer-events: none;
+}
+
+.text {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 2rem;
+  color: #e5cc6f;
+  text-align: justify;
+  line-height: 1.5;
+  width: min(170vw, 128rem);
+  animation: move 120s linear infinite;
+  --angle: 70deg;
+  margin-top: 950px;
+}
+
+@keyframes move {
+  from {
+    transform: rotateX(var(--angle)) translateY(74rem);
+  }
+  to {
+    transform: rotateX(var(--angle)) translateY(-150rem);
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: -0.1rem;
+}
+
+
+.img{
+    width: 100%;
+}
