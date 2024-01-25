@@ -58,7 +58,7 @@ body {
 
 @keyframes move {
   from {
-    transform: rotateX(var(--angle)) translateY(161rem);
+    transform: rotateX(var(--angle)) translateY(151rem);
   }
   to {
     transform: rotateX(var(--angle)) translateY(-150rem);
