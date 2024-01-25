@@ -53,12 +53,12 @@ body {
   width: min(170vw, 128rem);
   animation: move 120s linear infinite;
   --angle: 70deg;
-  margin-top: 950px;
+  margin-top: 650px;
 }
 
 @keyframes move {
   from {
-    transform: rotateX(var(--angle)) translateY(74rem);
+    transform: rotateX(var(--angle)) translateY(184rem);
   }
   to {
     transform: rotateX(var(--angle)) translateY(-150rem);
