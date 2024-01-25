@@ -101,6 +101,8 @@ h2 {
         margin-top: 0.5rem;
       }
 
+      
+
       .img{
         width: 100%;
         align-items: left;
@@ -135,5 +137,16 @@ h2 {
         margin-top: 150px;
         margin: 5px;
       }
+
+      
+
+@keyframes move {
+  from {
+    transform: rotateX(var(--angle)) translateY(164rem);
+  }
+  to {
+    transform: rotateX(var(--angle)) translateY(-150rem);
+  }
+}
 
 }
