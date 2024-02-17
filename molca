@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <meta name="robots" content="index,follow" />
+    <meta title="Delicious Hack | ShutDown CTF" />
+    <meta name="description" content="Delicious Hack Games | Máquina CTF ShutDown | Revienta este desafío y llévate tus 40 Donnuts" />
+    <meta name="keywords" content="ciberseguridad, hacking, linux, blog informática, software libre, foss, foos, open source"/>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Delicious Hack" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://delicioushack.com/juegos" />
+    <meta property="og:image" content="https://img.freepik.com/vector-gratis/recursos-graficos-videojuegos-brick-wall-neon-style_24908-58770.jpg?w=826&t=st=1707497766~exp=1707498366~hmac=baece76ce7ae0bbfd0aff012ea085d33cf0ebc2e18519f5da5b3a5442c0732b0" />
+    <meta property="og:description" content="Delicious Hack Games | Máquina CTF ShutDown | Revienta este desafío y llévate tus 40 Donnuts." />
+    <meta name="robots" content="index,follow">
+	
+    <link  rel="icon" href="https://raw.githubusercontent.com/DeliciousHack/delicioushack.github.io/gh-pages/images/logo3.jpg" type="image/jpeg" sizes="16x16" />
+    <link href="css-juegos.css" rel="stylesheet">
+     
+
+
+
+    <title>CTF SHUTDOWN</title>
+
+</head> 
+
+
+
+
+<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img class="logo-menu" src="images/bg-menu-web.png"></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        
+
+        <li>
+            <a href="#" class="desktop-item">Menú</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Menú</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="images/secret-logo1.png" alt="">
+                </div>
+                <div class="row">
+                  <header>WIKI</header>
+                  <ul class="mega-links">
+                    <li><a href="https://wiki.delicioushack.com/" target="_blank">Documentación</a></li>
+                    <li><a href="https://wiki.delicioushack.com/vulnyx-writeups" target="_blank">WriteUps</a></li>
+                    <li><a href="https://wiki.delicioushack.com/redes/tor" target="_blank">Sistemas</a></li>
+                    <li><a href="https://wiki.delicioushack.com/redes" target="_blank">Redes</a></li>
+                    <li><a href="https://wiki.delicioushack.com/" target="_blank">Programación</a></li>
+                  </ul><br>
+
+                 
+                
+                  
+                </div>
+                <div class="row">
+                  <header>Juegos / Desafíos</header>
+                  <ul class="mega-links">
+                    <li><a href="https://delicioushack.com/juegos" target="_blank">Menu Juegos</a></li>
+		    <li><a href="https://delicioushack.com/juegos" target="_blank">Desafío Cultural</a></li>  
+                    li><a href="https://delicioushack.com/shutdown" target="_blank">Máquinas CTF</a></li> 
+                    <li><a href="https://delicioushack.com/ranking">Ranking</a></li>
+                  </ul>
+                  <br><br><br>
+                </div>
+                  
+
+                
+                <div class="row">
+                  <header>Centros de Mandos</header>
+                  <ul class="mega-links">
+                    <li><a href="" target="_blank">Mumble</a></li>
+                    <li><a href="https://discord.gg/cbgA7aVcmF" target="_blank">Discord</a></li>
+                    <li><a href="https://t.me/delicioushack" target="_blank">Telegram</a></li>
+                    <li><a href="" target="_blank">IRC</a></li>
+                    <li><a href="#"></a></li>
+                  </ul><br><br><br>
+                  
+                </div>
+              </div>
+            </div>
+            <li ><a href="https://delicioushack.com/juegos" >Juegos</a></li>
+	      <li ><a href="https://delicioushack.com/osint" target="_blank">OSINT</a></li>
+            <li ><a href="https://delicioushack.com/shutdown" target="_blank">CTF</a></li>
+            <li><a href="https://delicioushack.com/ranking" target="_blank">Ranking</a></li>
+	    <li><a href="https://wiki.delicioushack.com/" target="_blank">Wiki</a></li>
+            <li><a href="https://delicioushack.com">Home</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+    <div class="drop-shadow">
+    <div class="glass"></div>
+    <span>ShutDown<br>CTF</span>
+    </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+    <div class="wrapper">
+      <div class="headline">
+          <span class="foos"><br>ShutDown CTF</span>
+      </div>
+      <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+              <div class="container">
+
+                  <div class="front"
+                      style="background-image: url(https://i.etsystatic.com/37725742/r/il/f18cb8/4585690327/il_570xN.4585690327_hh2e.jpg)">
+                      <div class="inner">
+                          <p>JUEGA</p>
+                          <span></span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p class="text-cajas">Descarga y revienta la máquina. Consigue tus Donnuts.</p><br>
+                          <span class="text-cajas"><a id="linkanimation" href="https://mega.nz/file/8K1yRSpB#T-V6u-mQ49XO7U_flkZrrcYxZAagDWLveXgCe3XXpeI" target="_blank">Descargar</a> </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                  <div class="front"
+                      style="background-image: url(https://media.istockphoto.com/id/1412282189/es/foto/cerradura-concepto-de-tecnolog%C3%ADa-de-red.jpg?s=612x612&w=0&k=20&c=vr5GbUQqG_kXFLVO4NRXpHSXutNAXe9br6oUGGq3Ap0=)">
+                      <div class="inner">
+                          <p>USER FLAG</p>
+                          <span> </span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p class="text-cajas2">Verifica flag USER.</p><br>
+			      <span class="text-cajas"><a id="linkanimation" href="http://juegos.delicioushack.com/user-flag" target="_blank">Login Flag</a> </span><br>
+			      
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front"
+                    style="background-image: url(https://media.istockphoto.com/id/1412282189/es/foto/cerradura-concepto-de-tecnolog%C3%ADa-de-red.jpg?s=612x612&w=0&k=20&c=vr5GbUQqG_kXFLVO4NRXpHSXutNAXe9br6oUGGq3Ap0=)">
+                    <div class="inner">
+                        <p>ROOT FLAG</p>
+                        <span> </span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <p class="text-cajas">Verificar flag de ROOT</p><br>
+                        <span class="text-cajas"><a id="linkanimation" href="http://juegos.delicioushack.com/root-flag" target="_blank">Login Flag</a> </span><br>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <div class="footer">
+              
+              <img src="https://media1.giphy.com/media/iFaPIqooUgZ2MkVNJI/giphy.gif?cid=ecf05e47hte4ew4y8oydrrytg8x7vmd07a4ko9td0ku15tck&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="150px"></h1>
+              <h2 class="text-footer">By ShellDredd</h2>
+            </div>
